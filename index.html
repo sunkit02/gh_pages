@@ -1,0 +1,22 @@
+<html>
+
+<head>
+  <title>Hello Github Pages</title>
+</head>
+
+<body>
+  <h1>Hello Github Pages</h1>
+  <p>Count: 0</p>
+  <button>Increment</button>
+</body>
+<script>
+  const p = document.querySelector("body>p")
+  const btn = document.querySelector("button")
+
+  let count = 0
+  btn.addEventListener("click", () => {
+    p.innerText = `Count: ${++count}`
+  })
+</script>
+
+</html>
